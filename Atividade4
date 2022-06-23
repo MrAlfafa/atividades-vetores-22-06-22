@@ -1,0 +1,17 @@
+#Digite os produtos e preços de uma lista de compra. O nome dos produtos e preços devem ficar em vetores diferentes, mas com os mesmos índices. Exemplo: Se o produto[5] for morango, 
+# o preco[5] é o preço do morango.Imprima o valor total da compra e o produto mais caro da lista.
+
+listaNome=['banana','limao','arroz','kiwi']
+listaPreco=[200    ,  4    ,  2    ,  1   ]
+
+maior=listaPreco[0]
+indiceMaior=0;
+
+for i in range(len(listaPreco)):
+    if(listaPreco[i]>maior):
+        maior=listaPreco[i]
+        indiceMaior=i
+
+print(listaNome[indiceMaior])
+print("preço",listaPreco[indiceMaior])
+print("posicao",indiceMaior)
