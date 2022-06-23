@@ -1,0 +1,40 @@
+#Digite preços de produtos e armazene em um vetor. Imprima o maior e o menor valor.
+
+vetorPreco=[]
+ 
+while (True):
+    preco=float(input("Conta:"))
+    if(preco<0):
+        break
+    vetorPreco.append(preco)
+    
+print("Preços",vetorPreco)
+
+menor=vetorPreco[0]
+maior=vetorPreco[0]
+
+for i in range(len(vetorPreco)):
+    if(menor>vetorPreco[i]):
+        menor=vetorPreco[i]
+    if(maior<vetorPreco[i]):
+        maior=vetorPreco[i]
+print("Maior:",maior)
+print("Menor:",menor)
+
+#outrsa maneira p´ropria da linguagem
+
+vetorPreco=[]
+ 
+while (True):
+    preco=float(input("Conta:"))
+    if(preco<0):
+        break
+    vetorPreco.append(preco)
+    
+print("Preços",vetorPreco)
+
+vetorPrecos.sort()
+print("Menor:",vetorPreco[0])
+
+vetorPrecos.reverse()
+print("Maior:",vetorPreco[0])
