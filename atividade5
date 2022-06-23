@@ -1,0 +1,16 @@
+#Digite quatro notas de provas e armazene-as em um vetor. Digite o valor da nota de recuperação e substitua a menor nota de prova
+
+provas=[]
+
+for i in range(4):
+    
+    provas.append(int(input("Nota prova: ")))
+
+print(provas)
+
+recuperacao=int(input("Recuperação:"))
+provas.sort()
+print(provas)
+provas[0]=recuperacao
+
+print(provas)
