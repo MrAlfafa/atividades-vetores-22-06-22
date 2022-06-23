@@ -1,0 +1,12 @@
+#Digite uma lista de compra e armazene cada produto em um vetor. Exiba a lista em ordem crescente
+listaCompra=[]
+
+while (True) :
+    produto=input("Produto:")
+    if(produto=="sair"):
+        break
+    listaCompra.append(produto)
+
+print(listaCompra)
+listaCompra.sort()
+print(listaCompra)
